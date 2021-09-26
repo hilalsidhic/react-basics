@@ -1,9 +1,10 @@
 import React from 'react'
 
- let Counter = (props)=> {
+ let Counter = ({title,...obj})=> {
+
     return (
         <div>
-            <h2>Counter : {props.count}</h2>
+            <h2>{title} : {obj.count}</h2>
         </div>
     )
 }
